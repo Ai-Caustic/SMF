@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .footer p{
+      font-size: 20px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+header{
+    width: 100%;
+    background: rgb(87, 17, 17);
+    text-align: center;
+    height: 100%;
+}
+
+.logoMoran{
+    width: -150px;
+    height: 100px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+.footer {
+    background: rgb(87, 17, 17) !important;
+
+}
+    .footer .sec h2 {
+        position: relative;
+        color: white;
+        font-weight: 500;
+        margin-bottom: 15px;
+        text-decoration: underline solid lime 3px;
+    }
+    .footer p{
+        font-size: 1vw;
+    }
+
+.hr {
+    height: 0.1cm !important;
+    margin: 0;
+    color: aliceblue;
+}
