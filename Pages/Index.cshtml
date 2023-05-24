@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
-<body>
+<body onload="load">
     <div class="text-center">
         <a asp-area="" asp-page="/SM/Login">Login</a>
         <a asp-area="" asp-page="/SM/Register">Register</a>
@@ -96,6 +96,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card text-center" id="smartGate">
             <div class="card-header">
                 <h4>
@@ -160,12 +161,190 @@
                     </ul>
                 </div>
             </div>
-            <div class="card-footer">
+            <div class="nav1">
                 <button type="button" class="btn btn-primary" onclick="displaySec2()">Next</button>
             </div>
         </div>
+
+      
     </div>
 
+    <div class="section2" id="section2">
+
+        <div class="card text-center" id="windowSensor">
+            <div class="card-header">
+                <h4>
+                    WiFi Door-Sensor and <br> Window Sensor &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkWindowSensor">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/WiFiDoorSensorWindowSensor/wds1.jpg" alt="Wifi Door-Sensor/Window Sensor" id="slider6">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p> Get a notification everytime the door or window <br> is opened
+                        </li>
+                        <li>
+                            <p>Trigger an alarm when the door/window <br> is opened while away</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="fireDetection">
+            <div class="card-header">
+                <h4>
+                    Smart Moran Fire <br> Detection Solutions &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkFireDetection">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/FireDetection/fd1.jpg" alt="Smart Moran Fire Detection Solutions" id="slider7">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Alerts you on the phone when smoke or fire <br> is detected</p>
+                        </li>
+                        <li>
+                            <p>Trigger an alarm automatically in case of fire</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="powerSockets">
+            <div class="card-header">
+                <h4>
+                    Smart Power Sockets &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkPowerSockets">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartPowerSockets/sps1.jpg" alt="Smart Power Sockets" id="slider8">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Switch appliances on and off remotely, using <br> Smart Moran App</p>
+                        </li>
+                        <li>
+                            <p>Schedule and time when the plug powers <br> on or off the appliances</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="securityLighting">
+            <div class="card-header">
+                <h4>
+                    Smart Security Lighting &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSecurityLighting">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartSecurityLighting/ssl1.jpg" alt="Smart Security Lighting" id="slider9">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>
+                                Secure your home and save energy by <br> controlling when and how security lights <br> switch on and
+                                off
+                            </p>
+                        </li>
+                        <li>
+                            <p>Use motion detectors to swuitch on thye lights</p>
+                        </li>
+                        <li>
+                            <p>Switch lights on when door is opened or <br> someone walks into the room</p>
+                        </li>
+                        <li>
+                            <p>Switch lights on when alarm is triggered</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="indoorLighting">
+            <div class="card-header">
+                <h4>
+                    Smart Indoor Lighting <br> Solutions &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkIndoorLighting">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartIndoorLighting/sil1.jpg" alt="Smart Indoor Lighting Solutios" id="slider10">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Automate lighting on and off your home</p>
+                        </li>
+                        <li>
+                            <p>Cut energy costs by keeping lights off when not <br> in use</p>
+                        </li>
+                        <li>
+                            <p>Switch lights on when door is opened <br> or someone walks in the room</p>
+                        </li>
+                        <li>
+                            <p>Works with Smart Moran App, Google Home <br> & Alexa Echo</p>
+                        </li>
+                        <li>
+                            <p>Colors: White, black, gold</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="energyMonitoring">
+            <div class="card-header">
+                <h4>
+                    Smart Energy Monitoring <br> Solutions &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkEnergyMonitoring">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartEnergyMonitoring/sem1.jpg" alt="Smart Energy Monitoring Solutions" id="slider11">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Fit for both electrical and solar</p>
+                        </li>
+                        <li>
+                            <p>Monitors energy consumption throughout <br> the home</p>
+                        </li>
+                        <li>
+                            <p>Shows energy user patterns and real-time data</p>
+                        </li>
+                        <li>
+                            <p>It helps you breakdown your electricity bill and <br> identify ways to reduce it</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav2">
+                <button type="button" class="btn btn-primary" onclick="displaySec1()">Previous</button>
+            </div>
+
+        </div>
+
+
+    </div>
 </body>
 
 
