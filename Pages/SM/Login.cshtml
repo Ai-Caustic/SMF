@@ -1,0 +1,42 @@
+﻿@page
+@model SMF.Pages.SM.LoginModel
+@{
+}
+<br />
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-text">
+            <h3>Login</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <form method="POST">
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="email" value="" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label">Password</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="password" value="" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="offset-sm-3 col-sm-3 d-grid">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="col-sm-3 d-grid">
+                        <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </table>
+    </div>
+</div>
+
+

@@ -4,7 +4,168 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <div class="text-center">
+        <a asp-area="" asp-page="/SM/Login">Login</a>
+        <a asp-area="" asp-page="/SM/Register">Register</a>
+    </div>
+    <div class="section1" id="section1">
+        <div class="card text-center" id="smartCurtain">
+            <div class="card-header">
+                <h4>
+                    Smart Curtain Control &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartCurtain">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartCurtainControl/smc1.jpg" alt="Smart Curtain Control" id="slider1">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p> Control the opening and closing of the curtains <br> with a single click on your phone</p>
+                        <li>
+                            <p>Draw the curtains without getting up from bed <br> or the couch</p>
+                        </li>
+                        <li>
+                            <p>Motorization of any curtains</p>
+                        </li>
+                        <li>
+                            <p>Silent and durable smart curtain control</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="waterLeakage">
+            <div class="card-header">
+                <h4>
+                    Smart Water Leakage Control &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkWaterLeakage">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartWaterLeakageControl/swlc1.jpg" alt="Smart Water leakage Control" id="slider2">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Installation: Wall-mounted</p>
+                        </li>
+                        <li>
+                            <p>Get notifications on Smart Phone when there is <br> water leakage at home</p>
+                        </li>
+                        <li>
+                            <p>Works with an automatic water tap; you can <br> close the water remotely incase of leakage</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="smartIntruder">
+            <div class="card-header">
+                <h4>
+                    Smart Intruder System &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartIntruder">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartIntruderSystem/sis1.jpg" alt="Smart Intruder System" id="slider3">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Automatic arm and disarm alarm based on time <br> or events
+                        </li>
+                        <li>
+                            <p>Arm and disarm alarm remotely</p>
+                        </li>
+                        <li>
+                            <p>Receive alerts via sms</p>
+                        </li>
+                        <li>
+                            <p>Integrates with Smart Moran products like <br> smart locks, smart security lighting etc. </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center" id="smartGate">
+            <div class="card-header">
+                <h4>
+                    Smart Gate Automation &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartGate">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img img src="~/Images/SmartGateAutomation/sga1.jpg" alt="Smart Gate Automation" id="slider4">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Automatic opening and closing of the gate</p>
+                        </li>
+                        <li>
+                            <p>Safety features - Object detection </p>
+                        </li>
+                        <li>
+                            <p>Manual override - you have options to open <br> or close the gate</p>
+                        </li>
+                        <li>
+                            <p>Remote notification when gate is opened/closed <br> at home</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center" id="smartCCTV">
+            <div class="card-header">
+                <h4>
+                    Smart CCTV and Surveillance <br> System &nbsp;
+                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartCCTV">
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="~/Images/SmartCCTV/sc1.jpg" alt="Smart CCTV and Surveillance System" id="slider5">
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>
+                            <p>Clear videos and image recording using smart <br> CCTV solution</p>
+                        </li>
+                        <li>
+                            <p>Two way communication</p>
+                        </li>
+                        <li>
+                            <p>4G and WI-FI support to allow remote access</p>
+                        </li>
+                        <li>
+                            <p>Solar powered for remote locations and <br> construction sites</p>
+                        </li>
+                        <li>
+                            <p>Motion detection and tracking</p>
+                        </li>
+                        <li>
+                            <p>Wireless - no cabling required</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-primary" onclick="displaySec2()">Next</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
