@@ -7,6 +7,7 @@ section1 = document.getElementById("section1");
 section2 = document.getElementById("section2");
 scroll = document.documentElement.scrollTop;
 let docfooter = document.getElementById("footer-nav");
+var submitProducts = document.getElementById("submitProducts");
 
 function load() {
   section1.style.display = "block";
@@ -24,6 +25,7 @@ function load() {
   //setInterval(slider10, 4000);
   //setInterval(slider11, 4000);
 }
+window.onload = load();
 
 function displaySec1() {
   section1.style.display = "block";
@@ -39,7 +41,7 @@ function displaySec2() {
     document.documentElement.scrollTop = 0; // For Chrome, FIrefox , Opera etc..
 }
 
-window.onload = load();
+
 
 function getDocHeight() {
     var D = document;
@@ -78,9 +80,22 @@ function footer() {
         }
 }
 
-function formSubmit() {
-    document.getElementById("form1").submit();
-    document.getElementById("form2").submit();
+submitProducts.addEventListener("click", handlesubmit);
+
+function handlesubmit(event) {
+
+    var form = document.forms["productForm"];
+    //Avoid page refresh
+    event.preventDefault();
+
+    var formOptions = form.elements["products"];
+    var selectedOptions = [];
+    formOptions.forEach((element) => {
+        if (element.checked) {
+            selectedOptions.push(element.value)
+        }
+    })
+    console.log(selectedOptions);
 }
 
 function slider() {

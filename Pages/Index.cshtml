@@ -9,13 +9,14 @@
         <a asp-area="" asp-page="/SM/Login">Login</a>
         <a asp-area="" asp-page="/SM/Register">Register</a>
     </div>
+    <form method="POST" id="productForm">
     <div class="section1" id="section1">
-        <form method="POST" id="form1">
+   
         <div class="card text-center" id="smartCurtain">
             <div class="card-header">
                 <h4>
                     Smart Curtain Control &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="smartCurtain" name="checkSmartCurtain">
+                    <input class="form-check-input bg-dark" type="checkbox" value="smartCurtain" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -45,7 +46,7 @@
             <div class="card-header">
                 <h4>
                     Smart Water Leakage Control &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="waterLeakage" name="checkWaterLeakage">
+                        <input class="form-check-input bg-dark" type="checkbox" value="waterLeakage" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -72,7 +73,7 @@
             <div class="card-header">
                 <h4>
                     Smart Intruder System &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="smartIntruder" name="checkSmartIntruder">
+                        <input class="form-check-input bg-dark" type="checkbox" value="smartIntruder" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -102,7 +103,7 @@
             <div class="card-header">
                 <h4>
                     Smart Gate Automation &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="smartGate" name="checkSmartGate">
+                        <input class="form-check-input bg-dark" type="checkbox" value="smartGate" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -132,7 +133,7 @@
             <div class="card-header">
                 <h4>
                     Smart CCTV and Surveillance <br> System &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="smartCCTV" name="checkSmartCCTV">
+                        <input class="form-check-input bg-dark" type="checkbox" value="smartCCTV" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -166,17 +167,14 @@
                 <button type="button" class="btn btn-primary" onclick="displaySec2()">Next</button>
             </div>
         </div>
-
-      </form>
     </div>
 
     <div class="section2" id="section2">
-        <form method="POST" id="form2">
         <div class="card text-center" id="windowSensor">
             <div class="card-header">
                 <h4>
                     WiFi Door-Sensor and <br> Window Sensor &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="windowSensor" name="checkWindowSensor">
+                        <input class="form-check-input bg-dark" type="checkbox" value="windowSensor" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -200,7 +198,7 @@
             <div class="card-header">
                 <h4>
                     Smart Moran Fire <br> Detection Solutions &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="fireDetection" name="checkFireDetection">
+                        <input class="form-check-input bg-dark" type="checkbox" value="fireDetection" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -224,7 +222,7 @@
             <div class="card-header">
                 <h4>
                     Smart Power Sockets &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="powerSockets" name="checkPowerSockets">
+                        <input class="form-check-input bg-dark" type="checkbox" value="powerSockets" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -248,7 +246,7 @@
             <div class="card-header">
                 <h4>
                     Smart Security Lighting &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="securityLighting" name="checkSecurityLighting">
+                        <input class="form-check-input bg-dark" type="checkbox" value="securityLighting" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -281,7 +279,7 @@
             <div class="card-header">
                 <h4>
                     Smart Indoor Lighting <br> Solutions &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="indoorLighting" name="checkIndoorLighting">
+                        <input class="form-check-input bg-dark" type="checkbox" value="indoorLighting" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -314,7 +312,7 @@
             <div class="card-header">
                 <h4>
                     Smart Energy Monitoring <br> Solutions &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="energyMonitoring" name="checkEnergyMonitoring">
+                        <input class="form-check-input bg-dark" type="checkbox" value="energyMonitoring" name="products">
                 </h4>
             </div>
             <div class="card-body">
@@ -340,12 +338,12 @@
             </div>
             <div class="nav2">
                 <button type="button" class="btn btn-primary" onclick="displaySec1()">Previous</button>
-                <button type="button" class="btn btn-secondary" onclick="formSubmit()">Submit</button>
+                <button type="button" class="btn btn-secondary" id="submitProducts">Submit</button>
             </div>
 
         </div>
-        </form>
     </div>
+    </form>
 </body>
 
 
