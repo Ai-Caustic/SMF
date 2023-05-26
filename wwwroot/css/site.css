@@ -23,6 +23,10 @@ html {
 
 body {
     padding-bottom: 150px;
+    min-height: 100vh;
+    background: white;
+    position: relative;
+    z-index: 1;
 }
 
 header{
@@ -37,16 +41,6 @@ header{
     height: 100px;
 }
 
-/*footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-   
-}*/
 .footer {
     background: rgb(87, 17, 17) !important;
 

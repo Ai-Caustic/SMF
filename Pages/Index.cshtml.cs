@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Reflection.Metadata;
+using System;
 
 namespace SMF.Pages
 {
@@ -13,10 +15,7 @@ namespace SMF.Pages
 		}
 
 		public void OnGet()
-		{
-
-		}
-
-		
+        {
+        }	
 	}
 }

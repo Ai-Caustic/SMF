@@ -10,11 +10,12 @@
         <a asp-area="" asp-page="/SM/Register">Register</a>
     </div>
     <div class="section1" id="section1">
+        <form method="POST" id="form1">
         <div class="card text-center" id="smartCurtain">
             <div class="card-header">
                 <h4>
                     Smart Curtain Control &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartCurtain">
+                    <input class="form-check-input bg-dark" type="checkbox" value="smartCurtain" name="checkSmartCurtain">
                 </h4>
             </div>
             <div class="card-body">
@@ -44,7 +45,7 @@
             <div class="card-header">
                 <h4>
                     Smart Water Leakage Control &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkWaterLeakage">
+                    <input class="form-check-input bg-dark" type="checkbox" value="waterLeakage" name="checkWaterLeakage">
                 </h4>
             </div>
             <div class="card-body">
@@ -71,7 +72,7 @@
             <div class="card-header">
                 <h4>
                     Smart Intruder System &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartIntruder">
+                    <input class="form-check-input bg-dark" type="checkbox" value="smartIntruder" name="checkSmartIntruder">
                 </h4>
             </div>
             <div class="card-body">
@@ -101,7 +102,7 @@
             <div class="card-header">
                 <h4>
                     Smart Gate Automation &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartGate">
+                    <input class="form-check-input bg-dark" type="checkbox" value="smartGate" name="checkSmartGate">
                 </h4>
             </div>
             <div class="card-body">
@@ -131,7 +132,7 @@
             <div class="card-header">
                 <h4>
                     Smart CCTV and Surveillance <br> System &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSmartCCTV">
+                    <input class="form-check-input bg-dark" type="checkbox" value="smartCCTV" name="checkSmartCCTV">
                 </h4>
             </div>
             <div class="card-body">
@@ -166,16 +167,16 @@
             </div>
         </div>
 
-      
+      </form>
     </div>
 
     <div class="section2" id="section2">
-
+        <form method="POST" id="form2">
         <div class="card text-center" id="windowSensor">
             <div class="card-header">
                 <h4>
                     WiFi Door-Sensor and <br> Window Sensor &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkWindowSensor">
+                    <input class="form-check-input bg-dark" type="checkbox" value="windowSensor" name="checkWindowSensor">
                 </h4>
             </div>
             <div class="card-body">
@@ -199,7 +200,7 @@
             <div class="card-header">
                 <h4>
                     Smart Moran Fire <br> Detection Solutions &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkFireDetection">
+                    <input class="form-check-input bg-dark" type="checkbox" value="fireDetection" name="checkFireDetection">
                 </h4>
             </div>
             <div class="card-body">
@@ -223,7 +224,7 @@
             <div class="card-header">
                 <h4>
                     Smart Power Sockets &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkPowerSockets">
+                    <input class="form-check-input bg-dark" type="checkbox" value="powerSockets" name="checkPowerSockets">
                 </h4>
             </div>
             <div class="card-body">
@@ -247,7 +248,7 @@
             <div class="card-header">
                 <h4>
                     Smart Security Lighting &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkSecurityLighting">
+                    <input class="form-check-input bg-dark" type="checkbox" value="securityLighting" name="checkSecurityLighting">
                 </h4>
             </div>
             <div class="card-body">
@@ -280,7 +281,7 @@
             <div class="card-header">
                 <h4>
                     Smart Indoor Lighting <br> Solutions &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkIndoorLighting">
+                    <input class="form-check-input bg-dark" type="checkbox" value="indoorLighting" name="checkIndoorLighting">
                 </h4>
             </div>
             <div class="card-body">
@@ -313,7 +314,7 @@
             <div class="card-header">
                 <h4>
                     Smart Energy Monitoring <br> Solutions &nbsp;
-                    <input class="form-check-input bg-dark" type="checkbox" value="yes" id="checkEnergyMonitoring">
+                    <input class="form-check-input bg-dark" type="checkbox" value="energyMonitoring" name="checkEnergyMonitoring">
                 </h4>
             </div>
             <div class="card-body">
@@ -339,11 +340,11 @@
             </div>
             <div class="nav2">
                 <button type="button" class="btn btn-primary" onclick="displaySec1()">Previous</button>
+                <button type="button" class="btn btn-secondary" onclick="formSubmit()">Submit</button>
             </div>
 
         </div>
-
-
+        </form>
     </div>
 </body>
 
