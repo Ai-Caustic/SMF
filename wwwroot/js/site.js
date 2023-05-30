@@ -12,8 +12,8 @@ var submitProducts = document.getElementById("submitProducts");
 function load() {
   section1.style.display = "block";
   section2.style.display = "none";
-    setInterval(slider, 4000);
-    //setInterval(footer, 100);
+  setInterval(slider, 4000);
+  //setInterval(footer, 100);
   //setInterval(slider2, 4000);
   //setInterval(slider3, 4000);
   //setInterval(slider4, 4000);
@@ -38,64 +38,66 @@ function displaySec2() {
   section1.style.display = "none";
   section2.style.display = "block";
   document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, FIrefox , Opera etc..
+  document.documentElement.scrollTop = 0; // For Chrome, FIrefox , Opera etc..
 }
 
-
-
 function getDocHeight() {
-    var D = document;
+  var D = document;
 
-    return Math.max(
-        D.body.scrollHeight, D.documentElement.scrollHeight,
-        D.body.offsetHeight, D.documentElement.offsetHeight,
-        D.body.clientHeight, D.documentElement.clientHeight
-    )
-
+  return Math.max(
+    D.body.scrollHeight,
+    D.documentElement.scrollHeight,
+    D.body.offsetHeight,
+    D.documentElement.offsetHeight,
+    D.body.clientHeight,
+    D.documentElement.clientHeight
+  );
 }
 
 function amountScrolled() {
-    var winHeight = window.innerHeight || (document.documentElement || document.body).clientHeight;
-    var docHeight = getDocHeight();
-    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    var trackLength = docHeight - winHeight;
+  var winHeight =
+    window.innerHeight ||
+    (document.documentElement || document.body).clientHeight;
+  var docHeight = getDocHeight();
+  var scrollTop =
+    window.scrollY ||
+    (document.documentElement || document.body.parentNode || document.body)
+      .scrollTop;
+  var trackLength = docHeight - winHeight;
 
-    var pctScrolled = Math.floor(scrollTop / trackLength * 100);
-    console.log(pctScrolled + "%");
+  var pctScrolled = Math.floor((scrollTop / trackLength) * 100);
+  console.log(pctScrolled + "%");
 
-    return pctScrolled;
+  return pctScrolled;
 }
 
 //window.onscroll = footer();
- 
 
 function footer() {
-
-        if (amountScrolled() >= 60) {
-            footer.style.display = "fixed";
-        } else if (amountScrolled() <= 50) {
-            footer.style.display = "none";
-        } else {
-            footer.style.display = "fixed";
-        }
+  if (amountScrolled() >= 60) {
+    footer.style.display = "fixed";
+  } else if (amountScrolled() <= 50) {
+    footer.style.display = "none";
+  } else {
+    footer.style.display = "fixed";
+  }
 }
 
 submitProducts.addEventListener("click", handlesubmit);
 
 function handlesubmit(event) {
+  var form = document.forms["productForm"];
+  //Avoid page refresh
+  event.preventDefault();
 
-    var form = document.forms["productForm"];
-    //Avoid page refresh
-    event.preventDefault();
-
-    var formOptions = form.elements["products"];
-    var selectedOptions = [];
-    formOptions.forEach((element) => {
-        if (element.checked) {
-            selectedOptions.push(element.value)
-        }
-    })
-    console.log(selectedOptions);
+  var formOptions = form.elements["products"];
+  var selectedOptions = [];
+  formOptions.forEach((element) => {
+    if (element.checked) {
+      selectedOptions.push(element.value);
+    }
+  });
+  console.log(selectedOptions);
 }
 
 function slider() {
