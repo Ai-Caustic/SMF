@@ -62,8 +62,6 @@ namespace SMF.Pages.SM
             Response.Redirect("/Index");
 
 
-
-
         }
     }
 }
