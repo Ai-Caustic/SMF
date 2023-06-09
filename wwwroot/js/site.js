@@ -8,22 +8,23 @@ section2 = document.getElementById("section2");
 scroll = document.documentElement.scrollTop;
 let docfooter = document.getElementById("footer-nav");
 var submitProducts = document.getElementById("submitProducts");
+const type = ".jpg";
 
 function load() {
   section1.style.display = "block";
   section2.style.display = "none";
   setInterval(slider, 4000);
   //setInterval(footer, 100);
-  //setInterval(slider2, 4000);
-  //setInterval(slider3, 4000);
-  //setInterval(slider4, 4000);
-  //setInterval(slider5, 4000);
-  //setInterval(slider6, 4000);
-  //setInterval(slider7, 4000);
-  //setInterval(slider8, 4000);
-  //setInterval(slider9, 4000);
-  //setInterval(slider10, 4000);
-  //setInterval(slider11, 4000);
+  setInterval(slider2, 4000);
+  setInterval(slider3, 4000);
+  setInterval(slider4, 4000);
+  setInterval(slider5, 4000);
+  setInterval(slider6, 4000);
+  setInterval(slider7, 4000);
+  setInterval(slider8, 4000);
+  setInterval(slider9, 4000);
+  setInterval(slider10, 4000);
+  setInterval(slider11, 4000);
 }
 window.onload = load();
 
@@ -103,145 +104,142 @@ function handlesubmit(event) {
 function slider() {
   let slider = document.getElementById("slider1");
   let path = "/Images/SmartCurtainControl/";
-  let type = ".jpg";
   let abv = "smc";
-  let index = Math.floor(Math.random() * (3 - 1) + 1);
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
     `${path}` + `${abv}${[index]}` + `${type}`,
     `${path}` + `${abv}${[index]}` + `${type}`,
     `${path}` + `${abv}${[index]}` + `${type}`,
   ];
   slider.src = images[index];
-  console.log(images);
 }
 
 function slider2() {
   let slider = document.getElementById("slider2");
   let path = "/Images/SmartWaterLeakageControl/";
-  let type = ".jpg";
+  let abv = "swlc";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + "swlc1" + `${type}`,
-    `${path}` + "swlc2" + `${type}`,
-    `${path}` + "swlc3" + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
-  console.log(images);
+  slider.src = images[index];
 }
 
 function slider3() {
   let slider = document.getElementById("slider3");
   let path = "/Images/SmartIntruderSystem/";
-  let type = ".jpg";
+  let abv = "sis";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + "sis1" + `${type}`,
-    `${path}` + "sis2" + `${type}`,
-    `${path}` + "sis3" + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider4() {
   let slider = document.getElementById("slider4");
-  let path = "/Images/SmartGateAutomation";
-  let type = ".jpg";
+  let path = "/Images/SmartGateAutomation/";
+  let abv = "sga";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `sga1` + `${type}`,
-    `${path}` + `sga2` + `${type}`,
-    `${path}` + `sga3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider5() {
   let slider = document.getElementById("slider5");
   let path = "/Images/SmartCCTV/";
-  let type = ".jpg";
+  let abv = "sc";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `sc1` + `${type}`,
-    `${path}` + `sc2` + `${type}`,
-    `${path}` + `sc3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider6() {
   let slider = document.getElementById("slider6");
   let path = "/Images/WiFiDoorSensorWindowSensor/";
-  let type = ".jpg";
+  let abv = "wds";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `wds1` + `${type}`,
-    `${path}` + `wds2` + `${type}`,
-    `${path}` + `wds3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider7() {
   let slider = document.getElementById("slider7");
   let path = "/Images/FireDetection/";
-  let type = ".jpg";
+  let abv = "fd";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `fd1` + `${type}`,
-    `${path}` + `fd2` + `${type}`,
-    `${path}` + `fd3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider8() {
   let slider = document.getElementById("slider8");
   let path = "/Images/SmartPowerSockets/";
-  let type = ".jpg";
+  let abv = "sps";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + "sps1" + `${type}`,
-    `${path}` + "sps2" + `${type}`,
-    `${path}` + "sps3" + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider9() {
   let slider = document.getElementById("slider9");
   let path = "/Images/SmartSecurityLighting/";
-  let type = ".jpg";
+  let abv = "ssl";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `ssl1` + `${type}`,
-    `${path}` + `ssl2` + `${type}`,
-    `${path}` + `ssl3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider10() {
   let slider = document.getElementById("slider10");
   let path = "/Images/SmartIndoorLighting/";
-  let type = ".jpg";
+  let abv = "sil";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `sil1` + `${type}`,
-    `${path}` + `sil2` + `${type}`,
-    `${path}` + `sil3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
 
 function slider11() {
   let slider = document.getElementById("slider11");
   let path = "/Images/SmartEnergyMonitoring/";
-  let type = ".jpg";
+  let abv = "sem";
+  let index = Math.floor(Math.random() * (3 - 1)) + 1;
   let images = [
-    `${path}` + `sem1` + `${type}`,
-    `${path}` + `sem2` + `${type}`,
-    `${path}` + `sem3` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
+    `${path}` + `${abv}${[index]}` + `${type}`,
   ];
-  let imgNo = Math.floor(Math.random() * images.length);
-  slider.src = images[imgNo];
+  slider.src = images[index];
 }
